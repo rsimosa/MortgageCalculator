@@ -1,0 +1,7 @@
+{
+  "name": "MortgageCalculatorClient",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

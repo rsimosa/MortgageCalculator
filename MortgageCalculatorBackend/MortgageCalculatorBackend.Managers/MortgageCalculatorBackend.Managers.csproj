@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MortgageCalculatorBackend.Accessors\MortgageCalculatorBackend.Accessors.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Common.Contracts\MortgageCalculatorBackend.Common.Contracts.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Common.Shared\MortgageCalculatorBackend.Common.Shared.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Engines\MortgageCalculatorBackend.Engines.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Managers.Shared\MortgageCalculatorBackend.Managers.Shared.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Utilities\MortgageCalculatorBackend.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
