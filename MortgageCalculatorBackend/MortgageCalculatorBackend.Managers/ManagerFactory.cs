@@ -2,6 +2,7 @@
 using MortgageCalculatorBackend.Accessors;
 using MortgageCalculatorBackend.Common.Contracts;
 using MortgageCalculatorBackend.Common.Shared;
+using MortgageCalculatorBackend.Contracts.Client;
 using MortgageCalculatorBackend.Engines;
 using MortgageCalculatorBackend.Managers.Shared;
 using MortgageCalculatorBackend.Utilities;
@@ -13,6 +14,7 @@ namespace MortgageCalculatorBackend.Managers
         public ManagerFactory(AmbientContext context) : base(context)
         {
             //AddType<IAdminFulfillmentManager>(typeof(OrderManager));
+            AddType<IHouseManager>(typeof(HouseManager));
         }
 
         public T CreateManager<T>() where T : class

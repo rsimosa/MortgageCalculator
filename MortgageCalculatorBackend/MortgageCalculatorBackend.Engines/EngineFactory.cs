@@ -18,6 +18,7 @@ namespace MortgageCalculatorBackend.Engines
             _utilityFactory = utilityFactory ?? new UtilityFactory(Context);
             _accessorFactory = accessorFactory ?? new AccessorFactory(Context, _utilityFactory);
 
+            AddType<IMortgageEngine>(typeof(MortgageEngine));
             //AddType<IRemittanceCalculationEngine>(typeof(RemittanceCalculationEngine));
         }
 

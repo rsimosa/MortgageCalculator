@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MortgageCalculatorBackend.Accessors\MortgageCalculatorBackend.Accessors.csproj" />
     <ProjectReference Include="..\MortgageCalculatorBackend.Common.Shared\MortgageCalculatorBackend.Common.Shared.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Contracts.Client\MortgageCalculatorBackend.Contracts.Client.csproj" />
     <ProjectReference Include="..\MortgageCalculatorBackend.Engines\MortgageCalculatorBackend.Engines.csproj" />
     <ProjectReference Include="..\MortgageCalculatorBackend.Utilities\MortgageCalculatorBackend.Utilities.csproj" />
   </ItemGroup>

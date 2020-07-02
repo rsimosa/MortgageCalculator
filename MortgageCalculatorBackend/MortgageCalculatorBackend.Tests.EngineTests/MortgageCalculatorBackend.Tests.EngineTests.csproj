@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MortgageCalculatorBackend.Engines.Shared\MortgageCalculatorBackend.Engines.Shared.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Engines\MortgageCalculatorBackend.Engines.csproj" />
   </ItemGroup>
 
 </Project>
