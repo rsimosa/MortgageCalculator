@@ -7,10 +7,15 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
+    path: '', 
+    redirectTo: 'mortgagecalculator', //the same as the page file
     pathMatch: 'full'
   },
+  {
+    path: 'mortgagecalculator',
+    loadChildren: () => import('./mortgagecalculator/mortgagecalculator.module').then( m => m.MortgagecalculatorPageModule)
+  },
+
 ];
 
 @NgModule({

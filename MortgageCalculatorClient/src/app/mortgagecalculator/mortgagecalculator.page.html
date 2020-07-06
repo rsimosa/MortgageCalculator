@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>mortgagecalculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input [(ngModel)]="L"></ion-input>
+  <ion-input [(ngModel)]="R"></ion-input>
+  <ion-input [(ngModel)]="N"></ion-input>
+  <ion-button (click)="Calculate()">Calculate</ion-button>
+  <div>
+    {{finalResult}}
+  </div>
+
+</ion-content>
