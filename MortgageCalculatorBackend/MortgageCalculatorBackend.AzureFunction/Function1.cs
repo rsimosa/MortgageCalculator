@@ -11,6 +11,7 @@ using MortgageCalculatorBackend.Managers;
 using MortgageCalculatorBackend.Contracts.Client;
 using MortgageCalculatorBackend.Common.Contracts;
 using System.Linq;
+using System.Web;
 
 namespace MortgageCalculatorBackend.AzureFunction
 {
@@ -22,24 +23,17 @@ namespace MortgageCalculatorBackend.AzureFunction
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
+            // ?L = 123123 & R = 1123 & N = 123123
 
-           // ?L = 123123 & R = 1123 & N = 123123
+            var query = HttpUtility.ParseQueryString(req.QueryString.ToString());
 
+            var L = Convert.ToDouble(query.Get("L"));
+            var R = Convert.ToDouble(query.Get("R"));
+            var N = Convert.ToInt32(query.Get("N"));
 
-            //var query = req.QueryString.ToString().ToCharArray();
+            var response = CalculateMortgage(L, R, N);
 
-            //for (int i = 0; i < query.Count(); i++)
-            //{ 
-            //    if (query[i].Equals("L"))
-            //    {
-
-            //    }
-            //}
-            
-
-            var response = CalculateMortgage(100000, 0.05, 40);
-
-            return new OkObjectResult(response.ToString());
+            return new OkObjectResult(response);
 
         }
 
