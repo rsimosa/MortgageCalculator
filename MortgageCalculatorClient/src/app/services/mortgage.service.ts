@@ -10,7 +10,14 @@ export class MortgageService {
 
   public async calculate(L: number, R: number, N: number): Promise<number> {
     return this.httpClient.get<number>(
-      'https://localhost:44303/House/CalculateMortgage?L=' + L + "&R=" + R + "&N=" + N).toPromise();
+      //'http://nedlrafael.azurewebsites.net/api/function1/house/calculatemortgage?L=' + L + "&R=" + R + "&N=" + N)
+      //.toPromise();
+
+      'https://studenttestapps-rafael2.azurewebsites.net/house/calculatemortgage?L=' + L + "&R=" + R + "&N=" + N)
+      .toPromise();
   }
 
+  
+
 }
+
