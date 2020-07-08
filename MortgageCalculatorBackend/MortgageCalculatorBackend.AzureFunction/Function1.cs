@@ -23,7 +23,6 @@ namespace MortgageCalculatorBackend.AzureFunction
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-            // ?L = 123123 & R = 1123 & N = 123123
 
             var query = HttpUtility.ParseQueryString(req.QueryString.ToString());
 
