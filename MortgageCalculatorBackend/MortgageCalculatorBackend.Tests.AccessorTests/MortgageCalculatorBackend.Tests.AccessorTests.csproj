@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MortgageCalculatorBackend.Accessors.Shared\MortgageCalculatorBackend.Accessors.Shared.csproj" />
+    <ProjectReference Include="..\MortgageCalculatorBackend.Accessors\MortgageCalculatorBackend.Accessors.csproj" />
     <ProjectReference Include="..\MortgageCalculatorBackend.Common.Contracts\MortgageCalculatorBackend.Common.Contracts.csproj" />
   </ItemGroup>
 

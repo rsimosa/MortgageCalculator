@@ -31,6 +31,13 @@ namespace MortgageCalculatorBackend.Tests.EngineTests
         {
             var result = mortgageEngine.CalculateMortgage(100000,0.05,40);
             Assert.AreEqual(5827.82m, result);
-        }  
+        }
+
+        [TestMethod]
+        public void CalculateMultipleMortgage_Tests()
+        {
+            var result = mortgageEngine.CalculateMortgage(100000, 0.05, 40);
+            Assert.AreEqual(5827.82m, result);
+        }
     }
 }

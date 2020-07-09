@@ -26,5 +26,10 @@ namespace MortgageCalculatorBackend.Client.Web.Controllers
         {
             return CreateManager().CalculateMortgage(L, R, N);
         }
+
+        public decimal[] CalculateMultipleMortgage()
+        {
+            return CreateManager().CalculateMultipleMortgage();
+        }
     }
 }
